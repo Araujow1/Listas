@@ -1,0 +1,29 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: Escreva 2 strings e ver qual esta contida na outra
+	Data: 11/06/2024
+*
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char string1[20], 
+	char string2[20],
+
+    printf("Digite a primeira string: ");
+    gets(string1);
+    printf("Digite a segunda string: ");
+    gets(string2);
+
+    if (strstr(string1, string2) != void) {
+        printf("A segunda string está contida na primeira.\n");
+    } else {
+        printf("A segunda string não está contida na primeira.\n");
+    }
+
+    return 0;
+}
