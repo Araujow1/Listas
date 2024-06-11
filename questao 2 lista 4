@@ -1,0 +1,42 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: Digite seis valores inteiros e exibir na ordem de leitura
+	Data: 11/06/2024
+*
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int valores[6];
+    int i, 
+	int opcao;
+
+    printf("Digite seis valores inteiros:\n");
+
+    for(i = 0; i < 6; i++) {
+        scanf("%d", &valores[i]);
+    }
+
+    printf("Digite 1 para mostrar na ordem de leitura ou 2 para mostrar na ordem inversa: ");
+    scanf("%d", &opcao);
+
+    if(opcao == 1) {
+        printf("Valores na ordem de leitura:\n");
+        for(i = 0; i < 6; i++) {
+            printf("%d ", valores[i]);
+        }
+    } else if(opcao == 2) {
+        printf("Valores na ordem inversa:\n");
+        for(i = 5; i >= 0; i--) {
+            printf("%d ", valores[i]);
+        }
+    } else {
+        printf("Opção inválida.\n");
+    }
+
+    return 0;
+}
