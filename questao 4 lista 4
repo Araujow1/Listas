@@ -1,0 +1,34 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: oito valores de um vetor e calcular x e y
+	Data: 11/06/2024
+*
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int vetor[8];
+    int x, y;
+    int i = 0;
+
+    printf("Digite os oito vetores:\n");
+    for(i = 0; i < 8; i++) {
+        scanf("%d", &vetor[i]);
+    }
+
+    printf("Digite os valores de X e Y (entre 0 e 7): ");
+    scanf("%d %d", &x, &y);
+
+    if(x >= 0 && x < 8 && y >= 0 && y < 8) {
+        int soma = vetor[x] + vetor[y];
+        printf("A soma dos valores nas posições %d e %d é: %d\n", x, y, soma);
+    } else {
+        printf("Posições inválidas.\n");
+    }
+
+    return 0;
+}
