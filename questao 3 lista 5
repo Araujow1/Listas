@@ -1,0 +1,33 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: Digitar uma string e escrever de trás pra frente
+	Data: 11/06/2024
+*
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char str[20];
+    int i;
+    int tamanho = 20;
+
+    printf("Digite uma string: ");
+    scanf("%s", str);
+
+    tamanho = strlen(str);
+
+    printf("String de trás para a frente: ");
+    for(i = tamanho - 1; i >= 0; i--) {
+        printf("%c", str[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
