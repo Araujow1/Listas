@@ -1,0 +1,29 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: Ver se a primeira string esta contida na segunda
+	Data: 11/06/2024
+*
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    char string1[20], string2[20];
+    int str;
+
+    printf("Digite a primeira string: ");
+    gets(string1);
+    printf("Digite a segunda string: ");
+    gets(string2);
+
+    if (str(string1, string2) != NULL) {
+        printf("A segunda string está contida na primeira.\n");
+    } else {
+        printf("A segunda string não está contida na primeira.\n");
+    }
+
+    return 0;
+}
