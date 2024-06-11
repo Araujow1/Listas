@@ -1,0 +1,36 @@
+/*
+*
+CABEÇALHO
+	Autor: Arthur Araujo
+	Objetivo: Armazenar 5 numeros e fazer a media deles
+	Data: 11/06/2024
+*
+*/
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int vetor[5];
+    int i;
+    int soma = 0;
+    float media;
+
+    printf("Digite 5 números inteiros:\n");
+
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &vetor[i]);
+        soma += vetor[i];
+    }
+	media = (float)soma / 5;
+	
+    printf("Os números digitados foram:\n");
+	printf("\nA média dos números digitados é: %.2f\n", media);
+    for(i = 0; i < 5; i++) {
+        printf("%d ", vetor[i]);
+        
+    }
+
+    return 0;
+}
